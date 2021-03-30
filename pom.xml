@@ -32,6 +32,16 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		<!-- <dependency>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-starter-security</artifactId>
+        	<version>${org.springframework-version}</version>
+        </dependency> -->
+        <dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
 				
 		<!-- AspectJ -->
 		<dependency>
@@ -80,7 +90,7 @@
 					<artifactId>jmxri</artifactId>
 				</exclusion>
 			</exclusions>
-			<scope>runtime</scope>
+			<!-- <scope>runtime</scope> -->
 		</dependency>
 
 		<!-- @Inject -->
@@ -164,6 +174,8 @@
             <artifactId>log4jdbc-log4j2-jdbc4</artifactId>
             <version>1.16</version>
         </dependency>
+
+        
 	</dependencies>
     <build>
         <plugins>

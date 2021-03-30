@@ -5,6 +5,13 @@
  
 <mapper namespace="com.company.mapper.memberMapper">
  
- 
+ 	<select id="selectMember" resultType="memberVO">
+        SELECT seq, id, pw, name, email FROM UserTable
+    </select>
+
+	<insert id="insertMember" parameterType="memberVO">
+        INSERT INTO UserTable (id, pw, name, email) values (#{id},#{pw},#{name}, #{email})
+    </insert>
+
     
 </mapper>
