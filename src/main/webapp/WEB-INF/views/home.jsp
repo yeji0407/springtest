@@ -20,6 +20,7 @@
     <table>
         <thead>
             <tr>
+            	  <th>seq</th>
                 <th>아이디</th>
                 <th>비밀번호</th>
                 <th>이름</th>
@@ -30,10 +31,10 @@
             <c:forEach items="${memberList}" var="member">
                 <tr>
                 	  <td>${member.seq}</td>
-                    <td>${member.id}</td>
-                    <td>${member.pw}</td>
-                    <td>${member.name}</td>
-                    <td>${member.email}</td>
+                    <td>${member.userid}</td>
+                    <td>${member.userpw}</td>
+                    <td>${member.username}</td>
+                    <td>${member.useremail}</td>
                 </tr>
             </c:forEach>
         </tbody>

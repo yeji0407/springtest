@@ -5,7 +5,7 @@
     <configuration>
  	
         <typeAliases>
-            <typeAlias type="com.company.dto.MemberVO" alias="memberVO"/>
+            <typeAlias type="com.company.service.vo.MemberVO" alias="memberVO"/>
         </typeAliases>
 
     </configuration>

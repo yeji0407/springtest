@@ -13,11 +13,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-	$("#submit").click(function(){
-		if($("#user_id").val().length==0){alert("write your id"); $("#user_id").focus(); return false;}
-		if($("#user_pw").val().length==0){alert("write your pw"); $("#user_pw").focus(); return false;}
-		if($("#user_name").val().length==0){alert("write your name"); $("#user_name").focus(); return false;}
-		if($("#user_email").val().length==0){alert("write your email"); $("#user_email").focus(); return false;}
+		
+		if($("#userid").val()==''||$("#userid").val()==null){alert("write your id"); $("#user_id").focus(); return false;}
+		if($("#userpw").val()==''||$("#userpw").val()==null){alert("write your pw"); $("#user_pw").focus(); return false;}
+		if($("#username").val()==''||$("#username").val()==null){alert("write your name"); $("#user_name").focus(); return false;}
+		if($("#useremail").val()==''||$("#useremail").val()==null){alert("write your email"); $("#user_email").focus(); return false;}
 	});
 });
 </script>

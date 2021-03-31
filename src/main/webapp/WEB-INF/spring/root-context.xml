@@ -35,10 +35,15 @@
    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache">
    		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
    </bean>
+   
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+   		<property name="basePackage" value="com.company.service.mapper"/>
+   </bean>
+
+   
 
 	<!-- bean 등록 -->
-	<context:component-scan base-package="com.company.dao"></context:component-scan>
-	<context:component-scan base-package="com.company.service"></context:component-scan>                      
-
+	<context:component-scan base-package="com.company.service.mapper"></context:component-scan>
+	<context:component-scan base-package="com.company.service"></context:component-scan>        
 
 </beans>
